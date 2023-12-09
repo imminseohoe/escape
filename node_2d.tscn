@@ -9,7 +9,6 @@ script = ExtResource("1_xswi2")
 
 [node name="wallpaper" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(100, 100)
-anchors_preset = -1
 offset_left = -5.0
 offset_top = -3.0
 offset_right = 1283.0

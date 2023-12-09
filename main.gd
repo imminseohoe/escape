@@ -7,4 +7,4 @@ func _process(delta):
 	pass
 
 func _on_button_pressed():
-	get_tree().change_scene("res://main1.tscn")
+	get_tree().change_scene_to_file("res://main_2.tscn")
