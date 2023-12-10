@@ -13,8 +13,8 @@ func _process(_delta):
 
 
 func _on_right_button_pressed():
-	get_tree().change_scene_to_file("res://main_4.tscn")
+	get_tree().change_scene_to_file("res://main_scene/main_4.tscn")
 
 
 func _on_left_button_pressed():
-	get_tree().change_scene_to_file("res://main_2.tscn")
+	get_tree().change_scene_to_file("res://main_scene/main_2.tscn")

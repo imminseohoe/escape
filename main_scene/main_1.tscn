@@ -1,12 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://dlyc3db7xiog4"]
+[gd_scene load_steps=5 format=3 uid="uid://cp1e5rglbor5b"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_gfu56"]
-[ext_resource type="Texture2D" uid="uid://c57773ukmxic3" path="res://UI/arrow.png" id="3_k1f3w"]
-[ext_resource type="Texture2D" uid="uid://cp0gyd5s8lm84" path="res://UI/arrow_left.png" id="4_cs6dy"]
-[ext_resource type="Texture2D" uid="uid://chg8xlrylj0hv" path="res://UI/HeartUIEmpty.png" id="5_i2jhp"]
+[ext_resource type="Script" path="res://main_script/main_1.gd" id="1_womv2"]
+[ext_resource type="Texture2D" uid="uid://c57773ukmxic3" path="res://UI/arrow.png" id="2_qjwvl"]
+[ext_resource type="Texture2D" uid="uid://cp0gyd5s8lm84" path="res://UI/arrow_left.png" id="3_nq84x"]
+[ext_resource type="Texture2D" uid="uid://chg8xlrylj0hv" path="res://UI/HeartUIEmpty.png" id="4_fn4ui"]
 
 [node name="main" type="Node2D"]
-script = ExtResource("1_gfu56")
+script = ExtResource("1_womv2")
 
 [node name="wallpaper" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(100, 100)
@@ -31,7 +31,7 @@ offset_bottom = 186.0
 grow_horizontal = 0
 grow_vertical = 2
 scale = Vector2(0.5, 0.5)
-icon = ExtResource("3_k1f3w")
+icon = ExtResource("2_qjwvl")
 flat = true
 expand_icon = true
 metadata/_edit_use_anchors_ = true
@@ -47,7 +47,7 @@ offset_right = 287.0
 offset_bottom = 186.0
 grow_vertical = 2
 scale = Vector2(0.5, 0.5)
-icon = ExtResource("4_cs6dy")
+icon = ExtResource("3_nq84x")
 flat = true
 expand_icon = true
 metadata/_edit_use_anchors_ = true
@@ -57,7 +57,7 @@ offset_left = 647.0
 offset_top = 334.0
 offset_right = 687.0
 offset_bottom = 374.0
-texture = ExtResource("5_i2jhp")
+texture = ExtResource("4_fn4ui")
 
 [connection signal="pressed" from="wallpaper/right_button" to="." method="_on_button_pressed" flags=18]
 [connection signal="pressed" from="wallpaper/left_button" to="." method="_on_left_button_pressed"]
