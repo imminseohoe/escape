@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Godoo"
-run/main_scene="res://main_scene/main_3.tscn"
+run/main_scene="res://main_scene/main_1.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
 
@@ -44,6 +44,14 @@ texture={
 "roughness/mode": 0,
 "roughness/src_normal": "",
 "svg/scale": 1.0
+}
+
+[input]
+
+click={
+"deadzone": 0.5,
+"events": [null, null, null, null, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(122, 16),"global_position":Vector2(126, 59),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
+]
 }
 
 [rendering]
