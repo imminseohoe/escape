@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cp1e5rglbor5b"]
+[gd_scene load_steps=7 format=3 uid="uid://cp1e5rglbor5b"]
 
 [ext_resource type="Script" path="res://main_script/main_1.gd" id="1_womv2"]
-[ext_resource type="Texture2D" uid="uid://c57773ukmxic3" path="res://UI/arrow.png" id="2_qjwvl"]
-[ext_resource type="Texture2D" uid="uid://cp0gyd5s8lm84" path="res://UI/arrow_left.png" id="3_nq84x"]
-[ext_resource type="Texture2D" uid="uid://chg8xlrylj0hv" path="res://UI/HeartUIEmpty.png" id="4_fn4ui"]
+[ext_resource type="Texture2D" uid="uid://c57773ukmxic3" path="res://img/UI/arrow.png" id="2_kp1n8"]
+[ext_resource type="Texture2D" uid="uid://cp0gyd5s8lm84" path="res://img/UI/arrow_left.png" id="3_pqxmt"]
+[ext_resource type="Texture2D" uid="uid://cgkm240p2ihgg" path="res://img/World/door.png" id="4_vk5r2"]
+[ext_resource type="Script" path="res://main_script/door_lock.gd" id="5_yqvs2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4w2lk"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_womv2")
@@ -31,7 +34,7 @@ offset_bottom = 186.0
 grow_horizontal = 0
 grow_vertical = 2
 scale = Vector2(0.5, 0.5)
-icon = ExtResource("2_qjwvl")
+icon = ExtResource("2_kp1n8")
 flat = true
 expand_icon = true
 metadata/_edit_use_anchors_ = true
@@ -47,17 +50,31 @@ offset_right = 287.0
 offset_bottom = 186.0
 grow_vertical = 2
 scale = Vector2(0.5, 0.5)
-icon = ExtResource("3_nq84x")
+icon = ExtResource("3_pqxmt")
 flat = true
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
-[node name="TextureRect" type="TextureRect" parent="wallpaper"]
-offset_left = 647.0
-offset_top = 334.0
-offset_right = 687.0
-offset_bottom = 374.0
-texture = ExtResource("4_fn4ui")
+[node name="door_lock" type="Button" parent="wallpaper"]
+layout_mode = 0
+offset_left = 539.0
+offset_top = 186.0
+offset_right = 747.0
+offset_bottom = 587.0
+icon = ExtResource("4_vk5r2")
+
+[node name="Button" type="Button" parent="wallpaper"]
+offset_left = 696.0
+offset_top = 333.0
+offset_right = 742.0
+offset_bottom = 414.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4w2lk")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4w2lk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4w2lk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w2lk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4w2lk")
+script = ExtResource("5_yqvs2")
 
 [connection signal="pressed" from="wallpaper/right_button" to="." method="_on_button_pressed" flags=18]
 [connection signal="pressed" from="wallpaper/left_button" to="." method="_on_left_button_pressed"]
+[connection signal="pressed" from="wallpaper/Button" to="." method="_on_door_lock_pressed"]

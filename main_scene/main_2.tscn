@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://bvdjq7dwmxigv"]
 
 [ext_resource type="Script" path="res://main_script/main_2.gd" id="1_rehwm"]
-[ext_resource type="Texture2D" uid="uid://c57773ukmxic3" path="res://UI/arrow.png" id="2_1kdd1"]
-[ext_resource type="Texture2D" uid="uid://cp0gyd5s8lm84" path="res://UI/arrow_left.png" id="3_jorb5"]
+[ext_resource type="Texture2D" uid="uid://c57773ukmxic3" path="res://img/UI/arrow.png" id="2_vuq6x"]
+[ext_resource type="Texture2D" uid="uid://cp0gyd5s8lm84" path="res://img/UI/arrow_left.png" id="3_mk3bo"]
 
 [node name="main_2" type="Node2D"]
 script = ExtResource("1_rehwm")
@@ -30,7 +30,7 @@ offset_bottom = 186.0
 grow_horizontal = 0
 grow_vertical = 2
 scale = Vector2(0.5, 0.5)
-icon = ExtResource("2_1kdd1")
+icon = ExtResource("2_vuq6x")
 flat = true
 expand_icon = true
 metadata/_edit_use_anchors_ = true
@@ -46,12 +46,13 @@ offset_right = 287.0
 offset_bottom = 186.0
 grow_vertical = 2
 scale = Vector2(0.5, 0.5)
-icon = ExtResource("3_jorb5")
+icon = ExtResource("3_mk3bo")
 flat = true
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
 [node name="TextEdit" type="TextEdit" parent="wallpaper"]
+layout_mode = 0
 offset_left = 454.0
 offset_top = 202.0
 offset_right = 594.0
