@@ -20,7 +20,7 @@ size = Vector2(20.7484, 24.3992)
 position = Vector2(-3, 2)
 
 [node name="Wood" type="Sprite2D" parent="."]
-position = Vector2(641, 362)
+position = Vector2(639, 364)
 scale = Vector2(2.03195, 1.73621)
 texture = ExtResource("1_ah123")
 
