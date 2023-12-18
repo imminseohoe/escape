@@ -1,0 +1,734 @@
+[gd_scene load_steps=14 format=3 uid="uid://bbsrfwupyc4a4"]
+
+[ext_resource type="Texture2D" uid="uid://jpd8s5fbbp3s" path="res://img/World/wood.png" id="1_ah123"]
+[ext_resource type="Texture2D" uid="uid://to5qdk46e5rw" path="res://img/World/wood9.png" id="2_jxxrc"]
+[ext_resource type="Texture2D" uid="uid://xrwg6daxlt2h" path="res://img/World/wood5.png" id="3_2gbe1"]
+[ext_resource type="Texture2D" uid="uid://dxhulaq2fvdvr" path="res://img/World/wood0.png" id="3_3t6y4"]
+[ext_resource type="Texture2D" uid="uid://dbf8yeksdrpkp" path="res://img/World/wood7.png" id="4_pooa6"]
+[ext_resource type="Texture2D" uid="uid://pilirny5ft64" path="res://img/World/wood3.png" id="6_ywyf7"]
+[ext_resource type="Texture2D" uid="uid://dlsnweh4vro0j" path="res://img/World/wood2.png" id="7_aptcj"]
+[ext_resource type="Texture2D" uid="uid://bsgot6fo2uoc5" path="res://img/World/wood6.png" id="8_w2u5q"]
+[ext_resource type="Texture2D" uid="uid://b0k8uo8odee1d" path="res://img/World/wood1.png" id="9_kjwmx"]
+[ext_resource type="Texture2D" uid="uid://k5hxdrj6fw1a" path="res://img/World/wood4.png" id="10_7dq28"]
+[ext_resource type="Texture2D" uid="uid://ol4bre6q7et5" path="res://img/World/wood8.png" id="11_4vinu"]
+[ext_resource type="Script" path="res://CharacterBody2D55.gd" id="12_dcnm1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yrd62"]
+size = Vector2(20.7484, 24.3992)
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-3, 2)
+
+[node name="Wood" type="Sprite2D" parent="."]
+position = Vector2(641, 362)
+scale = Vector2(2.03195, 1.73621)
+texture = ExtResource("1_ah123")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-215.556, -149.175)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D"]
+position = Vector2(0, -6.10352e-05)
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("2_jxxrc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D"]
+position = Vector2(0, -2.28882e-05)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-215.556, -121.529)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D2"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_2gbe1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D2"]
+position = Vector2(7.62939e-06, 2.28882e-05)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D3" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-191.934, -149.175)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D3"]
+position = Vector2(-0.109985, 0.265015)
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_3t6y4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D3"]
+position = Vector2(-0.60173, 0.264912)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D4" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-168.311, -149.175)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D4"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("4_pooa6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D4"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D5" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-168.311, -121.529)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D5"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("4_pooa6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D5"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D6" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-191.934, -121.529)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D6"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("6_ywyf7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D6"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D7" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-215.556, -93.8826)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D7"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("7_aptcj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D7"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D8" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-168.311, -93.8827)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D8"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("8_w2u5q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D8"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D9" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-191.934, -93.8827)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D9"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("9_kjwmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D9"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D10" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-215.556, -66.2362)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D10"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_2gbe1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D10"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D11" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-168.311, -66.2362)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D11"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("10_7dq28")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D11"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D12" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-191.934, -66.2362)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D12"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("7_aptcj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D12"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D13" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-215.556, -38.5898)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D13"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_3t6y4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D13"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D14" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-168.311, -38.5898)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D14"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("9_kjwmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D14"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D15" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-191.934, -38.5898)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D15"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("4_pooa6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D15"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D16" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-215.556, -10.9434)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D16"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("7_aptcj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D16"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D17" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-168.311, -10.9434)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D17"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("6_ywyf7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D17"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D18" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-191.934, -10.9434)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D18"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_3t6y4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D18"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D19" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-215.556, 16.703)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D19"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("9_kjwmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D19"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D20" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-168.311, 16.7031)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D20"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("6_ywyf7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D20"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D21" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-191.934, 16.7031)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D21"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("6_ywyf7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D21"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D22" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-215.556, 44.3494)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D22"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_3t6y4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D22"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D23" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-168.311, 44.3495)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D23"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("10_7dq28")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D23"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D24" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-191.934, 44.3495)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D24"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_2gbe1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D24"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D25" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-215.556, 71.9959)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D25"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("9_kjwmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D25"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D26" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-168.311, 71.9959)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D26"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("4_pooa6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D26"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D27" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-191.934, 71.9959)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D27"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_3t6y4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D27"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D28" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-128.94, -149.175)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D28"]
+position = Vector2(0, -6.10352e-05)
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_3t6y4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D28"]
+position = Vector2(0, -2.28882e-05)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D29" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-128.94, -121.529)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D29"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("6_ywyf7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D29"]
+position = Vector2(7.62939e-06, 2.28882e-05)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D30" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-105.317, -149.175)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D30"]
+position = Vector2(-0.109985, 0.265015)
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("2_jxxrc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D30"]
+position = Vector2(-0.60173, 0.264912)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D31" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-81.6949, -149.175)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D31"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("7_aptcj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D31"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D32" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-81.6949, -121.529)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D32"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("9_kjwmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D32"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D33" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-105.317, -121.529)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D33"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_2gbe1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D33"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D34" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-128.94, -93.8826)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D34"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_2gbe1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D34"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D35" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-81.6949, -93.8827)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D35"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("9_kjwmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D35"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D36" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-105.317, -93.8827)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D36"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("8_w2u5q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D36"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D37" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-128.94, -66.2362)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D37"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("9_kjwmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D37"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D38" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-81.6949, -66.2362)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D38"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("7_aptcj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D38"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D39" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-105.317, -66.2362)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D39"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("10_7dq28")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D39"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D40" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-128.94, -38.5898)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D40"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("10_7dq28")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D40"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D41" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-81.6949, -38.5898)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D41"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("10_7dq28")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D41"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D42" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-105.318, -38.5898)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D42"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("11_4vinu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D42"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D43" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-128.94, -10.9434)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D43"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("7_aptcj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D43"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D44" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-81.6949, -10.9434)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D44"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("9_kjwmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D44"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D45" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-105.318, -10.9434)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D45"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("10_7dq28")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D45"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D46" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-128.94, 16.703)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D46"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("7_aptcj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D46"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D47" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-81.6949, 16.7031)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D47"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_3t6y4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D47"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D48" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-105.318, 16.7031)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D48"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_3t6y4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D48"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D49" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-128.94, 44.3494)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D49"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("9_kjwmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D49"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D50" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-81.6949, 44.3495)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D50"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("11_4vinu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D50"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D51" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-105.318, 44.3495)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D51"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("8_w2u5q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D51"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D52" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-128.94, 71.9959)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D52"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_3t6y4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D52"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D53" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-81.6949, 71.9959)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D53"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("10_7dq28")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D53"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D54" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-105.318, 71.9959)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D54"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_3t6y4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D54"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D55" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-148.626, 113.466)
+script = ExtResource("12_dcnm1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D55"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("7_aptcj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D55"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D56" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-180.123, 113.466)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D56"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("9_kjwmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D56"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D57" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-117.129, 113.466)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D57"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("6_ywyf7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D57"]
+position = Vector2(214.572, -208.501)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D58" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-211.619, 113.466)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D58"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_3t6y4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D58"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D59" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-180.123, 150.327)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D59"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("8_w2u5q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D59"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D60" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-85.632, 113.466)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D60"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("10_7dq28")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D60"]
+position = Vector2(137.799, -226.932)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D61" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-148.626, 150.327)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D61"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("4_pooa6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D61"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D62" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-211.619, 150.327)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D62"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("3_2gbe1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D62"]
+position = Vector2(-4.57764e-05, -7.62939e-06)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D63" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-117.129, 150.327)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D63"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("11_4vinu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D63"]
+position = Vector2(211.619, -139.96)
+shape = SubResource("RectangleShape2D_yrd62")
+
+[node name="CharacterBody2D64" type="CharacterBody2D" parent="Wood"]
+position = Vector2(-85.632, 150.327)
+
+[node name="Sprite2D" type="Sprite2D" parent="Wood/CharacterBody2D64"]
+scale = Vector2(0.0786608, 0.0930666)
+texture = ExtResource("2_jxxrc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wood/CharacterBody2D64"]
+position = Vector2(194.395, -249.393)
+shape = SubResource("RectangleShape2D_yrd62")

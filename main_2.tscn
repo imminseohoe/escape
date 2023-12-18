@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=3 uid="uid://buxmcc12hegk"]
+
+[ext_resource type="Texture2D" uid="uid://c57773ukmxic3" path="res://UI/arrow.png" id="1_72xrx"]
+
+[node name="main_2" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(100, 100)
+offset_left = -5.0
+offset_top = -3.0
+offset_right = 1283.0
+offset_bottom = 725.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.984314, 0.854902, 0.921569, 1)
+
+[node name="Arrow" type="TextureRect" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -102.0
+offset_right = 204.0
+offset_bottom = 102.0
+grow_vertical = 2
+texture = ExtResource("1_72xrx")
+
+[node name="Arrow2" type="TextureRect" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -204.0
+offset_top = -102.0
+offset_bottom = 102.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("1_72xrx")
+flip_h = true
+
+[node name="TextEdit" type="TextEdit" parent="ColorRect"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -14.0
+offset_top = -14.0
+offset_right = 14.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "2 번쨰"

@@ -53,6 +53,7 @@ expand_icon = true
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="wallpaper"]
+layout_mode = 0
 offset_left = 647.0
 offset_top = 334.0
 offset_right = 687.0
